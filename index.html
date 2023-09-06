@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/4ad3cedff4.js" crossorigin="anonymous"></script>ss
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -12,12 +13,165 @@
 		{
 			font-weight: bolder;
 			color: royalblue;
+			margin-top: 10px;
 		}
 		.myimg
 		{
 			margin-top: 50px;
 			border-radius: 150px;
+			transition-duration: 3s;
+		}
+		.myimg:hover
+		{
 			box-shadow: 0px 0px 50px black;
+		}
+		.shambhu
+		{
+			font-size: 70px;
+			color: transparent;
+/*			text-shadow: 0px 0px 10px grey;*/
+			-webkit-text-stroke: 2px royalblue;
+		}
+		.greeting
+		{
+			font-size: 30px;
+			font-variant: small-caps;
+			font-weight: bolder;
+			color: grey;
+		}
+		.resbtn
+		{
+			color: white;
+			border: none;
+			width: 120px;
+			height: 50px;
+			font-size: 20px;
+			border-radius: 13px;
+			font-weight: bolder;
+			background-color: royalblue;
+			transition-duration: 2s;
+		}
+		.resbtn:hover
+		{
+			transform: scale(1.2);
+			background-color: white;
+			color: royalblue;
+			border: 2px solid royalblue;
+		}
+		.careerobj
+		{
+			width: 100%;
+			height: 350px;
+			background-color: whitesmoke;
+			margin-top: ;
+		}
+		.sectionheading
+		{
+			color: royalblue;
+			font-weight: bolder;
+		}
+		.para
+		{
+			width: 80%;
+			font-size: 25px;
+			text-align: justify;
+			padding-top: 20px;
+		}
+		.skillssection
+		{
+			width: 100%;
+			height: 300px;
+			background-color: whitesmoke;
+		}
+		.skl
+		{
+			margin-bottom: 50px;
+		}
+		.skills
+		{
+			font-weight: bolder;
+			color: grey;
+			font-size: 20px;
+			padding-top: 20px;
+
+
+		}
+		.Skillheadinng
+		{
+			font-size: 25px;
+			font-weight: bolder;
+			color: orange;
+
+		}
+		.Skillheadinng:hover
+		{
+				text-decoration: underline 2px solid orange;
+				transition-duration: 2s;
+		}
+		.project
+		{
+				width: 100%;
+				height: 1000px;
+		}
+		.bootsrapcard
+		{
+			width: 85%;
+			padding-top: 20px;
+		}
+		.card-img-top
+		{
+			height: 300px !important;
+		}
+		.card
+		{
+			transition-duration: 1s;
+			width: 600px;
+		}
+		.card:hover
+		{
+			box-shadow: 0px 0px 20px black;
+		}
+		.enqform
+		{
+			width: 70%;
+		}
+		.fa-brands
+		{
+			margin-top: 20px;
+			margin-left: 10px;
+			transition-duration: 1s;
+		}
+		.fa-brands:hover
+		{
+			transform: scale(1.3);
+		}
+		.footer
+		{
+			width: 100%;
+			height: 70px;
+			text-align: center;
+			background-color: lightgrey;
+			color: orange;
+			font-weight: bolder;
+		}
+		.footer h1
+		{
+			line-height: 70px;
+		}
+		.heart
+		{
+			font-size: 50px;
+			text-align: center;
+			color: red;
+			animation-name: heartbeat;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes heartbeat
+		{
+			50%{
+				opacity: 0,//0.0 1.0;
+			}
 		}
 	</style>
 </head>
@@ -30,7 +184,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -47,19 +201,158 @@
         <a class="nav-link disabled">Contact</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 	</div>
 	<!-- navigation bar div closed -->
-	<div align="center">
-		<!-- insert image -->
-		<img src="Shambhu.jpg" class="myimg" height="300px" width="300px">
-		<h2 class="myname">SHAMBHU</h2>
+	
+	<div class="tablediv" align="center">
+		<table  width="90%">
+			<tr>
+				<td width="50%">
+					<div align="center">
+					<!-- insert image -->
+					<img src="images.jpg" class="myimg" height="300px" width="300px">
+				</div>
+				</td>
+				<td align="center">
+					<div>
+						<p class="greeting">
+						Hello my name is
+					</p>
+						<h2 class="myname shambhu">PRATIK</h2>
+						<p class="greeting">I am a Full Stack Java Developer</p>
+					</div>
+					<div align="center">
+					<a href="Resume.pdf" download><button class="resbtn">Resume</button></a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="careerobj" align="center">
+		<h1 class="sectionheading">ABOUT</h1>
+		<p class="para">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<div class="skillssection skl" align="center">
+		<h1 class="sectionheading">SKILLS</h1>
+	<table  width="80%" height="200px">
+		<tr valign="top" align="center">
+			<td width="34%">
+				<span class="Skillheadinng">Languages</span>
+				<p class="skills">
+					Core Java, Python, SQL, C, C++, CSS, php, XML, JSON, JavaScript
+				</p>
+			</td>
+			<td width="34%">
+				<span class="Skillheadinng">API & Framework</span>
+				<p class="skills">ReactJS, NodeJS, Spring, Rest, Soap, SpringBoot, Spring Core, Spring MVC, Collection</p>
+			</td>
+			<td>
+				 <span class="Skillheadinng">Operating System</span>  
+				<p class="skills"> Windows, Linux, Ubuntu, Unix, iOs, Andriod</p>
+			</td>
+		</tr>
+	</table>	
+	</div>
+	<!-- Project -->
+	<div class="project" align="center">
+		<h1 class="sectionheading">PROJECT</h1>
+		<div class="bootsrapcard">
+			<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6zWVLPdiTM_EhoVhx__6KS__KeAQIlalow&usqp=CAU" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Calculator</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThQtu08Q9pMLfM9QmKlYFv4v69gRpMom4dnA&usqp=CAU" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Clock</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://www.scdn.co/i/_global/open-graph-default.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Spotify</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa1n5ELUcWNpvYrou19mFqzVPNV1NcAmkq1A&usqp=CAU" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Snake game</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+		<!-- bootsrapcard close	 -->
+	</div>
+	<div class="contact" align="center">
+		<h1 class="sectionheading">CONTACT</h1>
+		<div>
+			<table width="90%" height="400px">
+				<tr>
+					<td width="50%" align="center">
+				<span class="Skillheadinng">Contact Info</span>
+				<h1>
+					<i class="fa-brands fa-instagram" style="color: red;"></i>
+					<i class="fa-brands fa-facebook"style="color: royalblue;"></i>
+					<i class="fa-brands fa-twitter"style="color: cyan;"></i>
+					<i class="fa-brands fa-github"></i>
 
+				</h1>
+					</td>
+					<td align="center" valign="top">
+						<div class="cntform">
+							<h3><span class="Skillheadinng">Contact Info</span></h3>
+							<div class="enqform">
+									<form>
+								  <div class="form-group">
+								    <label for="exampleInputEmail1">Email address</label>
+								    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">Password</label>
+								    <input type="password" class="form-control" id="exampleInputPassword1">
+								  </div>
+								  <div class="form-group form-check">
+								    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+								    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<h1>
+			Made with<span class="heart">&#x2764;</span> by Pratik
+		</h1>
 	</div>
 </body>
 </html>
